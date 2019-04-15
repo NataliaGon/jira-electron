@@ -1,5 +1,6 @@
 
 const jiraFunction = require('./config/user.js');
+const JiraClient = require('jira-connector');
 
 function getMyself(name, password, callback) {
     //    const jira = new JiraClient({
@@ -9,7 +10,7 @@ function getMyself(name, password, callback) {
     //             password: password
     //         }
     //     });
-    // console.log(jiraFunction);
+    console.log(jiraFunction);
     const jira = jiraFunction(name, password)
 
     jira.myself.getMyself(
