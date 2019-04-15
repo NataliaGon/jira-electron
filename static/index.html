@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registration</title>
+    <meta charset="utf-8" />
+</head>
+<body>
+    <h1>Log in </h1>
+    <img src="https://jira.morning.agency/secure/useravatar?ownerId=natalia.g&avatarId=11214" alt=""/>
+    <form action="/register" method="post">
+        <label>User name </label><br>
+        <input id="user-name" type="text" name="userName" /><br><br>
+        <label>Password</label><br>
+        <input id="password"  type="text" name="userAge" /><br><br>
+        <input id ="submit" type="submit" value="Get Boards" />
+        <input id ="myself" type="submit" value="Get Myself" />
+        <input id ="issues" type="submit" value="Get Issues" />
+    </form>
+    <div id ="me"></div>
+    <div id="jira-api-container"></div>
+  <script src="index.js"></script>
+</body>
+</html>
